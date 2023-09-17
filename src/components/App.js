@@ -1,19 +1,13 @@
-
 import React from "react";
-import { increment,decrement } from "../action/counteraction";
-import { useSelector,useDispatch } from "react-redux";
-import './../styles/App.css';
 
-const App = () => {
-  const counter = useSelector(state=>state.a)
-  const dispatch=useDispatch();
-  return (
-    <div>
-        <h1>{counter}</h1>
-        <button onClick={()=>dispatch(increment(1))}>increment</button>
-        <button onClick={()=>dispatch(decrement(1))}>decrement</button>
-    </div>
-  )
+const App=()=>{
+
+
+    return (
+        <div id="main">
+            <p>Now I can render any React component on any DOM node I want using ReactDOM.render</p>
+        </div>
+    )
 }
 
-export default App
+export default App;
